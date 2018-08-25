@@ -24,9 +24,9 @@ $body .= "message: ". $message. "\m";
 $body .= "Email: ". $email. "\m";
 
 $to = "contatvishaljain@gmail.com";
-@mail($to, $email_subject, $body, $headers);  
+$response = mail($to, $email_subject, $body, $headers);  
 
-$return = array('type' => 'success' , 'message' => $body);
+$return = array('type' => 'success' , 'message' => $body. print_R($response,1));
 
 echo json_encode($return);
 ?>

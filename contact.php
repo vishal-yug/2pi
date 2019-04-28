@@ -23,7 +23,7 @@ $body .= "Phone: ". $phone. "\m";
 $body .= "message: ". $message. "\m";
 $body .= "Email: ". $email. "\m";
 
-$to = "contatvishaljain@gmail.com";
+$to = "sudhanshug5@gmail.com";
 $response = mail($to, $email_subject, $body, $headers);  
 
 $return = array('type' => 'success' , 'message' => $body. print_R($response,1));
